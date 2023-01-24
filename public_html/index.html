@@ -139,21 +139,21 @@
             <div class="table-tag">
                 <div class="d-flex" style="align-items: flex-start;">
                     <span class="count-number">5)</span>
-                    <table border="1" style="width: 100%;">
+                    <table border="1" class="color-black-100" style="width: 100%;">
                         <thead>
-                            <tr>
+                            <tr class="font-bold">
                                 <th style="width:40%;">Company</th>
                                 <th style="width:40%;">Contact</td>
                                 <th style="width: 20%;">Country</td>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="font-bold">
                                 <td style="width:40%;">lorem ipsum</td>
                                 <td style="width:40%;">sed quia consequuntur</td>
                                 <td style="width:20%;">USA</td>
                             </tr>
-                            <tr>
+                            <tr class="font-bold">
                                 <td style="width:40%;">lorem ipsum dolor</td>
                                 <td style="width:40%;">commodi consequatur</td>
                                 <td style="width:20%;">Mexico</td>
@@ -170,42 +170,42 @@
                     <span class="count-number">6)</span>
                     <form action="">
                         <div class="d-flex">
-                            <label for="fname" class="font-20 color-black-100">First Name : </label>
+                            <label for="fname" class="font-20 color-black-100 font-bold">First Name : </label>
                             <input type="text" name="fname" placeholder="First Name" style="font-size: 15px;padding: 5px 10px;margin-left:30px">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="mname" class="font-20 color-black-100">Middle Name : </label>
+                            <label for="mname" class="font-20 color-black-100 font-bold">Middle Name : </label>
                             <input type="text" name="mname" placeholder="Middle Name" style="font-size: 15px;padding: 5px 10px;margin-left:30px">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="lname" class="font-20 color-black-100">Last Name : </label>
+                            <label for="lname" class="font-20 color-black-100 font-bold">Last Name : </label>
                             <input type="text" name="lname" placeholder="Last Name" style="font-size: 15px;padding: 5px 10px;margin-left:30px">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="email" class="font-20 color-black-100">Email Id : </label>
-                            <input type="email" name="email" placeholder="Email Id" style="font-size: 15px;padding: 5px 10px;margin-left:30px">
+                            <label for="email" class="font-20 color-black-100 font-bold">Email Id : </label>
+                            <input type="email" name="email" required placeholder="Email Id" style="font-size: 15px;padding: 5px 10px;margin-left:30px">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="number" class="font-20 color-black-100">Mobile Number : </label>
+                            <label for="number" class="font-20 color-black-100 font-bold">Mobile Number : </label>
                             <input type="text" name="number" placeholder="Mobile Number" style="font-size: 15px;padding: 5px 10px;margin-left:30px">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="date" class="font-20 color-black-100">Date : </label>
+                            <label for="date" class="font-20 color-black-100 font-bold">Date : </label>
                             <input type="date" name="date" placeholder="Date" style="font-size: 15px;padding: 5px 10px;margin-left:30px">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="dateTime" class="font-20 color-black-100">Date & time : </label>
+                            <label for="dateTime" class="font-20 color-black-100 font-bold">Date & time : </label>
                             <input type="datetime-local" name="dateTime" style="font-size: 15px;padding: 5px 10px;margin-left:30px">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="dateTime" class="font-20 color-black-100">Gender : </label>
-                            <input type="radio" value="male" name="gender" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
+                            <label class="font-20 color-black-100 font-bold">Gender : </label>
+                            <input type="radio" value="male" id="male" name="gender" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
                             <label for="male" style="align-self: center;">Male</label>
-                            <input type="radio" value="female" name="gender" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
+                            <input type="radio" value="female" id="female" name="gender" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
                             <label for="female" style="align-self: center;">Female</label>
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="dateTime" class="font-20 color-black-100">Select : </label>
+                            <label class="font-20 color-black-100 font-bold">Select City: </label>
                             <select name="city" id="city" style="font-size: 15px;padding: 5px 10px;margin-left: 30px;">
                                 <option value="select">--select city--</option>
                                 <option value="ahmedabad">Ahmedabad</option>
@@ -215,24 +215,30 @@
 
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="dateTime" class="font-20 color-black-100">Languages : </label>
-                            <input type="radio" value="english" name="lang" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
+                            <label class="font-20 color-black-100 font-bold">Languages : </label>
+                            <input type="radio" id="english" value="english" name="lang" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
                             <label for="english" style="align-self: center;">English</label>
-                            <input type="radio" value="gujarati" name="lang" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
+                            <input type="radio" id="gujarati" value="gujarati" name="lang" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
                             <label for="gujarati" style="align-self: center;">Gujarati</label>
-                            <input type="radio" value="hindi" name="lang" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
+                            <input type="radio" id="hindi" value="hindi" name="lang" style="font-size: 15px;padding: 5px 10px;margin-left:30px;">
                             <label for="hindi" style="align-self: center;">Hindi</label>
                         </div>
+
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="psw" class="font-20 color-black-100">Password : </label>
+                            <label for="myfile" class="font-20 color-black-100 font-bold">Select a file:</label>
+                            <input type="file" style="font-size: 15px;padding: 5px 10px;margin-left:30px" id="myfile" name="myfile">
+                        </div>
+
+                        <div class="d-flex" style="margin-top: 15px;">
+                            <label for="psw" class="font-20 color-black-100 font-bold">Password : </label>
                             <input type="password" name="psw" style="font-size: 15px;padding: 5px 10px;margin-left:30px" placeholder="Password">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="color" class="font-20 color-black-100">Color : </label>
+                            <label for="color" class="font-20 color-black-100 font-bold">Color : </label>
                             <input type="color" name="color" style="font-size: 15px;padding: 5px 10px;margin-left:30px" placeholder="Password">
                         </div>
                         <div class="d-flex" style="margin-top: 15px;">
-                            <label for="range" class="font-20 color-black-100">Range : </label>
+                            <label for="range" class="font-20 color-black-100 font-bold">Range : </label>
                             <input type="range" name="range" style="font-size: 15px;padding: 5px 10px;margin-left:30px" placeholder="Password">
                         </div>
                         <div class="d-flex" style="gap:10px;margin-top:20px;">
@@ -249,7 +255,7 @@
                     <span class="count-number">7)</span>
                     <table border="1" style="width:100%">
                         <thead>
-                            <tr>
+                            <tr class="color-black-100">
                                 <th style="width: 40%;">Company</th>
                                 <th style="width: 40%;">Contact</td>
                                 <th style="width: 20%;">Country</td>
